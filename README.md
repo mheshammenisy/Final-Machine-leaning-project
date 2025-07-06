@@ -3,6 +3,7 @@ This project is a machine learning-based web app that predicts whether a person 
 
 ## 🔗 Live Demo:
 👉 Try the App
+https://final-machine-leaning-project-9wx4yjiuqktvclkhdjshsa.streamlit.app/
 
 ## 📌 Project Overview
 The project follows a complete machine learning pipeline:
