@@ -3,7 +3,8 @@ import pandas as pd
 import joblib
 
 # Load model and features
-model = joblib.load('personality4_model.pkl')
+model = joblib.load('personality10_model.pkl')
+features = joblib.load('features10.pkl')
 
 # Title
 st.title("🧠 Personality Prediction App")
