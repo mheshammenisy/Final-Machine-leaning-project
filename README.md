@@ -1,54 +1,78 @@
-# 🧠 Personality Prediction Web App
+## 🧠 Personality Prediction Web App
+This project is a machine learning-based web app that predicts whether a person is an Introvert or Extrovert based on behavioral traits. It was created as part of the Epsilon AI Academy program and is deployed using Streamlit Cloud.
 
-This project is a simple **machine learning-based web app** built using **Streamlit** that predicts whether a person is an **Introvert** or **Extrovert** based on their behavioral traits.
-
----
+## 🔗 Live Demo:
+👉 Try the App
 
 ## 📌 Project Overview
+The project follows a complete machine learning pipeline:
 
-The dataset includes behavioral features such as:
+Data preprocessing & cleaning
 
-- Time spent alone
-- Stage fear
-- Social event attendance
-- Going outside
-- Feeling drained after socializing
-- Friends circle size
-- Social media post frequency
+Exploratory Data Analysis (EDA)
 
-The app allows users to **select their behavior scores** and predicts their **personality type** using a **Random Forest Classifier** trained on labeled data.
+Model training using RandomForestClassifier
 
----
+Streamlit deployment for user interaction
+
+The training and prediction are based on a dataset containing user behavioral traits.
 
 ## 🧰 Technologies Used
+Tool	Purpose
+Python 3.x	Programming language
+Pandas	Data manipulation
+Scikit-learn	Model building
+Joblib	Model serialization
+Streamlit	Web app interface
+Jupyter Notebook	Data exploration and training
 
-- Python 3.10+
-- Streamlit
-- Pandas
-- Seaborn, Matplotlib, Plotly
-- Scikit-learn
-- Joblib
+## 📊 Features Used for Prediction
+The model uses the following 7 behavioral features:
 
----
+Time_spent_Alone
 
-## 📊 Exploratory Data Analysis (EDA)
+Stage_fear
 
-The project includes:
+Drained_after_socializing
 
-- ✅ Correlation heatmap
-- ✅ KDE distribution plot
-- ✅ Boxplots and bar plots for key features
-- ✅ Outlier removal using IQR method
-- ✅ Normalization of features for composite scoring
+Social_event_attendance
 
----
+Going_outside
 
-## 🚀 How to Run the App
+Friends_circle_size
 
-### 🔹 Step 1: Clone or Download
+Post_frequency
 
-Download or clone this repository:
+These features are collected via dropdowns in the app, allowing users to test how their behavior maps to personality.
 
-```bash
-git clone https://github.com/your-username/personality-predictor.git
-cd personality-predictor
+## 🧠 Model Training
+The model was trained in a Jupyter Notebook:
+📄 Extrover_introvertproject.ipynb
+
+Data cleaning and encoding
+
+Feature selection
+
+RandomForestClassifier training
+
+Model saved as personality11_model.pkl
+
+Feature list saved as features11.pkl
+
+## 🌐 Streamlit Web App
+The app is built with Streamlit and provides an interactive interface for personality prediction.
+
+## 📄 steamfinalapp.py handles:
+
+UI input for 7 features
+
+Loading the model and feature list
+
+Making predictions
+
+Displaying results with friendly feedback
+
+## 🔗 Main Repository Source
+This project is part of the Epsilon AI Final Machine Learning Project
+🔗 Main Epsilon AI GitHub Repository
+
