@@ -14,6 +14,10 @@ st.markdown("Select your behavior scores below and click **Predict** to see your
 Time_spent_Alone = st.selectbox("Time Spent Alone", list(range(0, 16)))
 Stage_fear = st.selectbox("Stage Fear (0 = No, 1 = Yes)", [0, 1])
 Drained_after_socializing = st.selectbox("Drained After Socializing (0 = No, 1 = Yes)", [0, 1])
+Social_event_attendance = st.selectbox("Social Event Attendance", list(range(0, 16)))
+Going_outside = st.selectbox("Going Outside", list(range(0, 16)))
+Friends_circle_size = st.selectbox("Friends Circle Size", list(range(0, 16)))
+Post_frequency = st.selectbox("Post Frequency", list(range(0, 16)))
 
 
 # Create a DataFrame with the same column order as training
@@ -21,7 +25,10 @@ input_data = pd.DataFrame([{
     'Time_spent_Alone': Time_spent_Alone,
     'Stage_fear': Stage_fear,
     'Drained_after_socializing': Drained_after_socializing,
-  
+    'Social_event_attendance': Social_event_attendance,
+    'Going_outside': Going_outside,
+    'Friends_circle_size': Friends_circle_size,
+    'Post_frequency': Post_frequency
 }])
 
 # Predict
